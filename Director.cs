@@ -29,11 +29,11 @@ namespace Unit03.Game
 
             Console.Write($"The card is: {_cardOne}");
             Console.Write("Higher or lower? [h/l] ");
-            _userChoice = Console.ReadLine();
+            string _userChoice = Console.ReadLine();
         }
         public void GetUpdate()
         {
-            if (_cardOne > _cardTwo) && (_userChoice = "l") {
+            if (_cardOne > _cardTwo && _userChoice == "l") {
                 _answercorrect = true;
             }
         }
