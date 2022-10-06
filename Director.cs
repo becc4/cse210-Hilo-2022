@@ -22,7 +22,7 @@ namespace Unit03.Game
                 DoOutputs();
             }
         }
-        public void GetInput() 
+        public void GetInputs() 
         {
             Card _cardOne = new Card();
             Card _cardTwo = new Card();
@@ -31,15 +31,15 @@ namespace Unit03.Game
             Console.Write("Higher or lower? [h/l] ");
             string _userChoice = Console.ReadLine();
         }
-        public void GetUpdate()
+        public void DoUpdates()
         {
             if (_cardOne > _cardTwo && _userChoice == "l") {
                 _answercorrect = true;
             }
         }
-        public void DoOutput()
+        public void DoOutputs()
         {
-
+            
         }
     }
 }
